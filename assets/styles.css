@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sura:wght@400;700&display=swap');
+
+:root{
+    --title-font-family: "Sura", serif;
+    --primary-color: #4C5844;
+    --text-color: #B0B4B1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: rgb(228,135,23);
+    background: linear-gradient(90deg, rgba(228,135,23,1) 0%, rgba(0,0,0,1) 50%, rgba(96,121,147,1) 100%);
+    min-height: 100vh;
+    justify-content: center;
+    /* align-items: center; */
+    
+    
+}
+
+.cabecalho{
+    background-color: var(--primary-color);
+    /* border: 1px solid red; */
+    
+}
+
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    background-color: rgba(44, 44, 46, 0.9); /* Ajustando opacidade */
+    /* border: 1px solid red; */
+    position: absolute; 
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    width: 50%; 
+    min-height: 90vh;
+    padding: 1.25rem; 
+   
+}
+
+.input-wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-name{
+    background-color: var(--primary-color);
+    margin: 0.5rem;
+    max-width: 20vh;
+    min-height: 3vh;
+    color: var(--text-color);
+
+}
+
+label{
+    color: var(--text-color);    
+}
+
+
+.form__table__container{
+    margin-top: 7rem;
+    min-height: 50%;
+    /* border: 1px solid red; */
+    
+}
+
+.result-list{
+    min-height: 100%;
+    width: 100%;
+
+    border: 1px solid var(--text-color);
+    th, tr, td{
+        border: 1px solid var(--text-color);
+        text-align: center;
+        width: 50%;
+        color: var(--text-color);
+        /* background-color: rgba(190, 48, 23, 0.637); */
+
+    }
+
+}
+
+.name-list{
+    padding: 0.25rem;
+    list-style-type: none;
+    color: var(--text-color);
+    /* min-height: 100%; */
+    height: 4px;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    
+    li{
+        padding: 0.25rem;
+        /* padding-bottom: 12rem; */
+    
+    }
+    
+}
+
+
+.main__container__section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    width: 90%;
+    padding: 15px;
+    /* min-height: 100%; */
+    /* height: 16rem; */
+    height: 45.31rem;
+    /* border: 1px solid red; */
+    position: absolute;
+
+}
+
+
+.main__container__section__title {
+    font-family: var(--title-font-family);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-color); /* Ajustar a cor */
+    
+
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.buttons-container button {
+  
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    cursor: pointer;
+    /* font-size: 1rem; */
+    background-color: var(--primary-color);
+    max-width: 20vh;
+    color: var(--text-color);
+    padding: 1rem 2rem;
+}
+
+
+.body__imgs {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1; /* Garante que ocupe todo o espaço restante */
+    display: flex;
+    min-height: 100vh; 
+    min-width: 100vh;
+    justify-content: space-between;
+    filter:blur(1.5px);
+    /* background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.973) 0%, rgba(0,0,0,0) 100%); */
+
+
+}
+
+.body__imgs__TRS {
+    /* border: 1px solid pink; */
+    display: flex;
+    filter: drop-shadow(30px 10px 4px #37373844);
+    /* background: linear-gradient(to right, rgba(88, 84, 80, 0) 0%,rgb(0, 0, 0) 100%); */
+
+}
+
+.body__imgs_CTS {
+    /* border: 1px solid purple; */
+    justify-content: center; /* Centraliza as imagens dentro dessa seção */
+    filter: drop-shadow(30px 10px 4px #37373844);
+
+}
+
+
+.body__imgs_CTS, .body__imgs__TRS {
+    flex-basis: 50%; /* Cada uma ocupará 50% do espaço disponível */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo dentro de cada div */
+}
+
+
+.body__imgs__CT, .body__imgs__TRS__TR {
+    width: 100%; /* Faz com que cada imagem ocupe 100% da largura disponível dentro de seu contêiner */
+    /* border: 1px solid blue; */
+}
+
+.body__imgs__CT img, .body__imgs__TRS__TR img {
+    width: 100%; 
+    /* height: auto;  */
+    /* border: 1px solid red; */
+}
+
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 24px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 0%;
+}
+
+
+.rodape__medias{
+    justify-content: space-between;
+    
+
+}
+.assets{
+    height: 2rem;
+    padding: 1vh 1vw;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>CS Team Selector</title>
+</head>
+<body>
+    <header>
+        <!-- <h1> Counter Strike Seleça Selector</h1> -->
+    </header>
+    <div class="body__imgs">
+        <div class="body__imgs__TRS">
+            <div class="body__imgs__TRS__TR">
+                <img src="assets/img/TRs.png" alt="tr" srcset="">
+            </div>
+        </div>
+        <div class="body__imgs_CTS">
+            <div class="body__imgs__CT">
+                <img src="assets/img/CTs.png" alt="ct" srcset="">
+            </div>
+        </div>
+    </div>
+    <main class="main__container">
+        <div class="cabecalho">
+            <h1> Counter Strike Seleça Selector</h1>
+        </div>   
+        <section class="main__container__section">
+            <h2 class="main__container__section__title">Counter Strike Seleça Selector</h2>
+            <form class="input-wrapper" id="amigoForm">
+                <label for="name">Digite o nome:</label>
+                <input type="text" id="amigo" class="input-name" name="name" autofocu="autofocus" required>
+                
+                <label for="level">Digite o level:</label>
+                <input type="text" id="level" class="input-name" name="level"  required>
+                <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list">
+
+                </ul>
+                <div class="form__table__container">
+                    <table id="resultado" class="result-list"></table>
+                </div>        
+                <div class="buttons-container">
+                    <button type="submit">Adicionar amigo</button>
+                    <button class="button-draw" onclick="sortearTime()" aria-label="Sortear amigo secreto">
+                        <img src="" alt="">
+                        Sortear time
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Developed by: Matheus Fonseca</p>
+        <div class="rodape__medias">
+            <a href="https://www.linkedin.com/in/matheus-fonseca1337/"><img src="assets/img/linkedin.png" alt="Linkedin" class="assets"></a>
+            <a href="https://github.com/Matthews1337"><img src="assets/img/github.png" alt="GitHub" class="assets"></a>
+            <a href="https://portfolio-two-ruddy-24.vercel.app/index.html"><img src="assets/img/bag.png" alt="Portfolio" class="assets"></a>
+        
+        </div>
+    </footer>
+</body>
+<script src="main.js"></script>
+</html>
+
