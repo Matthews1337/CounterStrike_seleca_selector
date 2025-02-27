@@ -1,8 +1,3 @@
-// To DO: 
-//     Web site que faz sorteio entre os 10 players 
-//     Apenas um jogador é responsavel por indicar os outros 9 jogadores e rodar a roda
-//     O site irá distribuir 5 jogadores para cada Time, de forma que o nível (média) total de cada time seja igual
-//     Ao indicar os jogadores, também deve ser indicado o nivel (gc, pontuacaoMM, etc)
 
 let infoPlayers = []
 
@@ -33,6 +28,7 @@ document.getElementById("amigoForm").addEventListener("submit", function(event) 
     let inputAddAmigo = document.querySelector("#amigo");
     let inputAddLevel = document.querySelector("#level");
     let level = parseFloat(inputAddLevel.value)
+
 
     if (infoPlayers.length < 10){
         infoPlayers.push({
